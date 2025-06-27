@@ -55,6 +55,9 @@ If you have any questions or comments about this file, please go to [developers.
   - Fixed a small bug in the knob CSS image references - the image for one of the states had a typo in its name.
 - 2.0
   - Added the Compute Usage reference file
+    -2.1
+  - Added flexbox to the CSS reference file
+  - Added pressed options to layer style faders
 
 ## License
 
