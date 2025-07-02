@@ -69,7 +69,8 @@ If you have any questions or comments about this file, please go to [developers.
 - 2.1
   - Added flexbox to the CSS reference file
   - Added pressed options to layer style faders
-- 3.0 Added the lua module reference file
+- 3.0
+  - Added the lua module reference file
 
 ## License
 
