@@ -1,6 +1,6 @@
 # Q-SYS Reference Files
 
-These reference files have been created as a library that can be used for copy/pasting specific elements and as quick reminders of how to program common
+These reference files have been created as a library that can be used for copy/pasting specific elements and as quick reminders of how to program common tasks.
 
 ## CSS Reference File
 
@@ -9,6 +9,10 @@ This file is intended to be used for **_reference purposes only_**. The linked C
 ## Compute Usage Reference File
 
 This file shows you how to monitor the compute usage of a core. This is a helpful troubleshooting technique and can serve as a guardrail when adding new features to a design.
+
+## Lua Module Reference File
+
+This file shows you how to import and utilize a lua module in lua scripts. There are 3 lua module examples.
 
 ## Instructions
 
@@ -27,6 +31,13 @@ This file shows you how to monitor the compute usage of a core. This is a helpfu
   - Double click to add this to your User Components libary
   - Drag this user component into a design and follow the instructions for connecting it to a core status block
   - Getting compute usage information requires verbose mode to be enabled on the core status block
+
+- **Lua Module Designer File**
+
+  - Each lua module example is on its own schematic page
+  - Open up the script on each page to see how the modules are imported and utilized
+  - _Please note_ that, in order to use a lua module, it must be added to your design via the Design Resources tab
+  - Two of the modules were written in-house, but the lorem ipsum generator was downloaded from github. Lua modules are an excellent way to avoid repeating the wheel by using code that's already been written.
 
 ## Getting Started
 
@@ -58,6 +69,7 @@ If you have any questions or comments about this file, please go to [developers.
     -2.1
   - Added flexbox to the CSS reference file
   - Added pressed options to layer style faders
+    -3.0 Added the lua module reference file
 
 ## License
 
@@ -66,4 +78,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledgments
 
 - Thank you Eugene Dunn III [@qsc-eugene](https://github.com/qsc-eugene) as always, for the QA support!
-- Thank you Bart Forpahl for finding a typo in the knob CSS
+- Thank you Bart Forpahl [@qsc-bartforpahl](https://github.com/qsc-bartforpahl) for finding a typo in the knob CSS
+- Thank you Kate Adkins [@qsc-kateadkins](https://github.com/qsc-kateadkins) for the large list of possible components for the lua module reference file
+- The Lorem Ipsum lua module was written by Seleznev Anton [@seleznevae](https://github.com/seleznevae/lua-lorem)
