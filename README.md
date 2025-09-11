@@ -70,11 +70,16 @@ If you have any questions or comments about this file, please go to [developers.
   - Fixed a small bug in the knob CSS image references - the image for one of the states had a typo in its name.
 - 2.0
   - Added the Compute Usage reference file
-    -2.1
+- 2.1
   - Added flexbox to the CSS reference file
   - Added pressed options to layer style faders
+<<<<<<< HEAD
 - 3.0 Added the lua module reference file
 - 4.0 Added the dynamic icons reference file
+=======
+- 3.0
+  - Added the lua module reference file
+>>>>>>> 56577b803a78cfc82cdc9f55f172e14ed1489c76
 
 ## License
 
