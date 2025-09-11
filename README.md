@@ -39,6 +39,10 @@ This file shows you how to import and utilize a lua module in lua scripts. There
   - _Please note_ that, in order to use a lua module, it must be added to your design via the Design Resources tab
   - Two of the modules were written in-house, but the lorem ipsum generator was downloaded from github. Lua modules are an excellent way to avoid repeating the wheel by using code that's already been written.
 
+- **Dynamic Channel Icons Designer File**
+
+  - Use this as a reference for updating icons (using an LED) when selecting an item from a combobox
+
 ## Getting Started
 
 - See the "01 Instructions" schematic pages of the design files for instructions on how to use these files
@@ -69,7 +73,8 @@ If you have any questions or comments about this file, please go to [developers.
     -2.1
   - Added flexbox to the CSS reference file
   - Added pressed options to layer style faders
-    -3.0 Added the lua module reference file
+- 3.0 Added the lua module reference file
+- 4.0 Added the dynamic icons reference file
 
 ## License
 
