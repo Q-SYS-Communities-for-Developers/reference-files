@@ -14,7 +14,11 @@ This file shows you how to monitor the compute usage of a core. This is a helpfu
 
 This file shows you how to import and utilize a lua module in lua scripts. There are 3 lua module examples.
 
-## Instructions
+## Dynamic Icons Reference File
+
+This file shows you how to use image files stored on a core as dynamic icons by base64 encoding them.
+
+# Instructions
 
 - **CSS Designer File**
 
@@ -73,13 +77,8 @@ If you have any questions or comments about this file, please go to [developers.
 - 2.1
   - Added flexbox to the CSS reference file
   - Added pressed options to layer style faders
-<<<<<<< HEAD
 - 3.0 Added the lua module reference file
 - 4.0 Added the dynamic icons reference file
-=======
-- 3.0
-  - Added the lua module reference file
->>>>>>> 56577b803a78cfc82cdc9f55f172e14ed1489c76
 
 ## License
 
