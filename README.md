@@ -18,6 +18,10 @@ This file shows you how to import and utilize a lua module in lua scripts. There
 
 This file shows you how to use image files stored on a core as dynamic icons by base64 encoding them.
 
+## Language Translation Reference File
+
+This file shows you how to use the DeepL API to translate text.
+
 # Instructions
 
 - **CSS Designer File**
@@ -42,6 +46,7 @@ This file shows you how to use image files stored on a core as dynamic icons by 
   - Open up the script on each page to see how the modules are imported and utilized
   - _Please note_ that, in order to use a lua module, it must be added to your design via the Design Resources tab
   - Two of the modules were written in-house, but the lorem ipsum generator was downloaded from github. Lua modules are an excellent way to avoid repeating the wheel by using code that's already been written.
+  - The language translation module requires a DeepL API key. You can create your own key at: https://www.deepl.com/
 
 - **Dynamic Channel Icons Designer File**
 
@@ -79,6 +84,7 @@ If you have any questions or comments about this file, please go to [developers.
   - Added pressed options to layer style faders
 - 3.0 Added the lua module reference file
 - 4.0 Added the dynamic icons reference file
+- 4.1 Added language translation to the lua module reference file
 
 ## License
 
