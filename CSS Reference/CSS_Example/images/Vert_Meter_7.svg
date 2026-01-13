@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #2a2a2a;
+      }
+
+      .cls-3 {
+        fill: #08df55;
+      }
+    </style>
+  </defs>
+  <g id="Base">
+    <g id="r7">
+      <rect class="cls-2" y="0" width="50" height="400"/>
+    </g>
+  </g>
+  <g id="Meter">
+    <g id="_7" data-name="7">
+      <g id="_1" data-name="1">
+        <rect class="cls-3" x="6.65" y="376.04" width="36.61" height="17.73"/>
+      </g>
+      <g id="_2" data-name="2">
+        <rect class="cls-3" x="6.65" y="356.53" width="36.61" height="17.73"/>
+      </g>
+      <g id="_3" data-name="3">
+        <rect class="cls-3" x="6.65" y="337.03" width="36.61" height="17.73"/>
+      </g>
+      <g id="_4" data-name="4">
+        <rect class="cls-3" x="6.65" y="317.53" width="36.61" height="17.73"/>
+      </g>
+      <g id="_5" data-name="5">
+        <rect class="cls-3" x="6.65" y="298.02" width="36.61" height="17.73"/>
+      </g>
+      <g id="_6" data-name="6">
+        <rect class="cls-3" x="6.65" y="278.52" width="36.61" height="17.73"/>
+      </g>
+      <g id="_7-2" data-name="7">
+        <rect class="cls-3" x="6.65" y="259.01" width="36.61" height="17.73"/>
+      </g>
+      <g id="_8" data-name="8">
+        <rect class="cls-1" x="6.65" y="239.51" width="36.61" height="17.73"/>
+      </g>
+      <g id="_9" data-name="9">
+        <rect class="cls-1" x="6.65" y="220" width="36.61" height="17.73"/>
+      </g>
+      <g id="_10" data-name="10">
+        <rect class="cls-1" x="6.65" y="200.5" width="36.61" height="17.73"/>
+      </g>
+      <g id="_11" data-name="11">
+        <rect class="cls-1" x="6.65" y="180.99" width="36.61" height="17.73"/>
+      </g>
+      <g id="_12" data-name="12">
+        <rect class="cls-1" x="6.65" y="161.49" width="36.61" height="17.73"/>
+      </g>
+      <g id="_13" data-name="13">
+        <rect class="cls-1" x="6.65" y="141.98" width="36.61" height="17.73"/>
+      </g>
+      <g id="_14" data-name="14">
+        <rect class="cls-1" x="6.65" y="122.48" width="36.61" height="17.73"/>
+      </g>
+      <g id="_15" data-name="15">
+        <rect class="cls-1" x="6.65" y="102.97" width="36.61" height="17.73"/>
+      </g>
+      <g id="_16" data-name="16">
+        <rect class="cls-1" x="6.65" y="83.47" width="36.61" height="17.73"/>
+      </g>
+      <g id="_17" data-name="17">
+        <rect class="cls-1" x="6.65" y="63.96" width="36.61" height="17.73"/>
+      </g>
+      <g id="_18" data-name="18">
+        <rect class="cls-1" x="6.65" y="44.46" width="36.61" height="17.73"/>
+      </g>
+      <g id="_19" data-name="19">
+        <rect class="cls-1" x="6.65" y="24.95" width="36.61" height="17.73"/>
+      </g>
+      <g id="_20" data-name="20">
+        <rect class="cls-1" x="6.65" y="5.45" width="36.61" height="17.73"/>
+      </g>
+    </g>
+  </g>
+</svg>

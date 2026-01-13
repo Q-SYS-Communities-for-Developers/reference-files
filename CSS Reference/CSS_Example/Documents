@@ -1,0 +1,157 @@
+<script>start("c:\\Users\\Hope.Roth\\OneDrive - Acuity Brands, Inc\\Documents\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("82189","82189",1,0,"0 B",1765467516,"12/11/25, 4:38:36 PM");</script>
+<script>addRow("Adobe","Adobe",1,0,"0 B",1765475728,"12/11/25, 6:55:28 PM");</script>
+<script>addRow("Application Files","Application%20Files",1,0,"0 B",1765467516,"12/11/25, 4:38:36 PM");</script>
+<script>addRow("Arduino","Arduino",1,0,"0 B",1765463436,"12/11/25, 3:30:36 PM");</script>
+<script>addRow("BitBucket","BitBucket",1,0,"0 B",1765467517,"12/11/25, 4:38:37 PM");</script>
+<script>addRow("camera-user-components","camera-user-components",1,0,"0 B",1765463433,"12/11/25, 3:30:33 PM");</script>
+<script>addRow("Clients","Clients",1,0,"0 B",1765467518,"12/11/25, 4:38:38 PM");</script>
+<script>addRow("Communities Example Files-Archive","Communities%20Example%20Files-Archive",1,0,"0 B",1765463436,"12/11/25, 3:30:36 PM");</script>
+<script>addRow("Crestron","Crestron",1,0,"0 B",1765475728,"12/11/25, 6:55:28 PM");</script>
+<script>addRow("CSS Archive","CSS%20Archive",1,0,"0 B",1765467548,"12/11/25, 4:39:08 PM");</script>
+<script>addRow("CSS Styles","CSS%20Styles",1,0,"0 B",1765463436,"12/11/25, 3:30:36 PM");</script>
+<script>addRow("Distech Controls","Distech%20Controls",1,0,"0 B",1765463436,"12/11/25, 3:30:36 PM");</script>
+<script>addRow("Distech Plugin Sample","Distech%20Plugin%20Sample",1,0,"0 B",1765467553,"12/11/25, 4:39:13 PM");</script>
+<script>addRow("ECPM Screen Shots","ECPM%20Screen%20Shots",1,0,"0 B",1765467553,"12/11/25, 4:39:13 PM");</script>
+<script>addRow("Example Designer Files","Example%20Designer%20Files",1,0,"0 B",1765467555,"12/11/25, 4:39:15 PM");</script>
+<script>addRow("Expenses","Expenses",1,0,"0 B",1765467555,"12/11/25, 4:39:15 PM");</script>
+<script>addRow("Fax","Fax",1,0,"0 B",1765475728,"12/11/25, 6:55:28 PM");</script>
+<script>addRow("GitHub","GitHub",1,0,"0 B",1765463438,"12/11/25, 3:30:38 PM");</script>
+<script>addRow("Graphics","Graphics",1,0,"0 B",1765467556,"12/11/25, 4:39:16 PM");</script>
+<script>addRow("Home System","Home%20System",1,0,"0 B",1765463400,"12/11/25, 3:30:00 PM");</script>
+<script>addRow("Ikonic","Ikonic",1,0,"0 B",1765467558,"12/11/25, 4:39:18 PM");</script>
+<script>addRow("ISE-HIO-Video_Audio_Content","ISE-HIO-Video_Audio_Content",1,0,"0 B",1765467559,"12/11/25, 4:39:19 PM");</script>
+<script>addRow("Kasa","Kasa",1,0,"0 B",1765467559,"12/11/25, 4:39:19 PM");</script>
+<script>addRow("Kittypocalypse","Kittypocalypse",1,0,"0 B",1765467560,"12/11/25, 4:39:20 PM");</script>
+<script>addRow("Logos","Logos",1,0,"0 B",1765467561,"12/11/25, 4:39:21 PM");</script>
+<script>addRow("LTT","LTT",1,0,"0 B",1765467561,"12/11/25, 4:39:21 PM");</script>
+<script>addRow("M5Burner-v3-beta-win-x64","M5Burner-v3-beta-win-x64",1,0,"0 B",1765467561,"12/11/25, 4:39:21 PM");</script>
+<script>addRow("My Data Sources","My%20Data%20Sources",1,0,"0 B",1765467562,"12/11/25, 4:39:22 PM");</script>
+<script>addRow("NTI","NTI",1,0,"0 B",1765467563,"12/11/25, 4:39:23 PM");</script>
+<script>addRow("Office Scripts","Office%20Scripts",1,0,"0 B",1765467563,"12/11/25, 4:39:23 PM");</script>
+<script>addRow("OneNote Notebooks","OneNote%20Notebooks",1,0,"0 B",1765467563,"12/11/25, 4:39:23 PM");</script>
+<script>addRow("Picnic 2022","Picnic%202022",1,0,"0 B",1765467563,"12/11/25, 4:39:23 PM");</script>
+<script>addRow("PicPick","PicPick",1,0,"0 B",1765467564,"12/11/25, 4:39:24 PM");</script>
+<script>addRow("q-sys-super-buffer","q-sys-super-buffer",1,0,"0 B",1765467564,"12/11/25, 4:39:24 PM");</script>
+<script>addRow("QSC","QSC",1,0,"0 B",1765463391,"12/11/25, 3:29:51 PM");</script>
+<script>addRow("QSYS Escape Room","QSYS%20Escape%20Room",1,0,"0 B",1765467566,"12/11/25, 4:39:26 PM");</script>
+<script>addRow("qsys-core-audit-main","qsys-core-audit-main",1,0,"0 B",1765467566,"12/11/25, 4:39:26 PM");</script>
+<script>addRow("Reflect","Reflect",1,0,"0 B",1765467566,"12/11/25, 4:39:26 PM");</script>
+<script>addRow("Reflect Demo Files","Reflect%20Demo%20Files",1,0,"0 B",1765467567,"12/11/25, 4:39:27 PM");</script>
+<script>addRow("Room Manager Develop","Room%20Manager%20Develop",1,0,"0 B",1765467568,"12/11/25, 4:39:28 PM");</script>
+<script>addRow("Room Manager Examples","Room%20Manager%20Examples",1,0,"0 B",1765467569,"12/11/25, 4:39:29 PM");</script>
+<script>addRow("Scanned Documents","Scanned%20Documents",1,0,"0 B",1765475728,"12/11/25, 6:55:28 PM");</script>
+<script>addRow("Shure","Shure",1,0,"0 B",1765475728,"12/11/25, 6:55:28 PM");</script>
+<script>addRow("Smart Dollhouse","Smart%20Dollhouse",1,0,"0 B",1765475728,"12/11/25, 6:55:28 PM");</script>
+<script>addRow("Sound recordings","Sound%20recordings",1,0,"0 B",1765467570,"12/11/25, 4:39:30 PM");</script>
+<script>addRow("SpinetiX","SpinetiX",1,0,"0 B",1765463445,"12/11/25, 3:30:45 PM");</script>
+<script>addRow("SynAudCon","SynAudCon",1,0,"0 B",1765467571,"12/11/25, 4:39:31 PM");</script>
+<script>addRow("Templates","Templates",1,0,"0 B",1765467571,"12/11/25, 4:39:31 PM");</script>
+<script>addRow("Testing","Testing",1,0,"0 B",1765463400,"12/11/25, 3:30:00 PM");</script>
+<script>addRow("Tradeshows","Tradeshows",1,0,"0 B",1765463445,"12/11/25, 3:30:45 PM");</script>
+<script>addRow("Training","Training",1,0,"0 B",1765470652,"12/11/25, 5:30:52 PM");</script>
+<script>addRow("WAVIT","WAVIT",1,0,"0 B",1765467571,"12/11/25, 4:39:31 PM");</script>
+<script>addRow("Yale","Yale",1,0,"0 B",1765467572,"12/11/25, 4:39:32 PM");</script>
+<script>addRow("2022-Q-SYS_logo+hex.zip","2022-Q-SYS_logo+hex.zip",0,5902390,"5.6 MB",1663610200,"9/19/22, 7:56:40 PM");</script>
+<script>addRow("295702_590541822390_105698268_n.jpg","295702_590541822390_105698268_n.jpg",0,139511,"136 kB",1681420802,"4/13/23, 11:20:02 PM");</script>
+<script>addRow("A2-400 Punchdown 10-12-23.docx","A2-400%20Punchdown%2010-12-23.docx",0,15255,"14.9 kB",1697231769,"10/13/23, 11:16:09 PM");</script>
+<script>addRow("After ransomware attack, state’s second-largest health insurer says patient data stolen - The Boston Globe.pdf","After%20ransomware%20attack,%20state%E2%80%99s%20second-largest%20health%20insurer%20says%20patient%20data%20stolen%20-%20The%20Boston%20Globe.pdf",0,953213,"931 kB",1684932897,"5/24/23, 2:54:57 PM");</script>
+<script>addRow("Allegiant Notes.txt","Allegiant%20Notes.txt",0,6456,"6.3 kB",1695335724,"9/22/23, 12:35:24 AM");</script>
+<script>addRow("Amp Scripting Example.qsys","Amp%20Scripting%20Example.qsys",0,40963,"40.0 kB",1725392782,"9/3/24, 9:46:22 PM");</script>
+<script>addRow("Anglophone Section - Important information.pdf","Anglophone%20Section%20-%20Important%20information.pdf",0,169525,"166 kB",1741802064,"3/12/25, 6:54:24 PM");</script>
+<script>addRow("Audio Architects_QSC Beta test and Feedback Master Agreement_02Apr25.docx","Audio%20Architects_QSC%20Beta%20test%20and%20Feedback%20Master%20Agreement_02Apr25.docx",0,258283,"252 kB",1747921755,"5/22/25, 3:49:15 PM");</script>
+<script>addRow("AVIXA Invoice - Jan 2025.pdf","AVIXA%20Invoice%20-%20Jan%202025.pdf",0,101860,"99.5 kB",1739994890,"2/19/25, 8:54:50 PM");</script>
+<script>addRow("AVIXA Three Day Instructor Agreement 2023 - Hope Roth.pdf","AVIXA%20Three%20Day%20Instructor%20Agreement%202023%20-%20Hope%20Roth.pdf",0,226722,"221 kB",1673535455,"1/12/23, 3:57:35 PM");</script>
+<script>addRow("AVIXA_Network_Security_FINAL_w_cover-HR Markup.pdf","AVIXA_Network_Security_FINAL_w_cover-HR%20Markup.pdf",0,539630,"527 kB",1730141291,"10/28/24, 7:48:11 PM");</script>
+<script>addRow("AVIXA_Network_Security_FINAL_w_cover.pdf","AVIXA_Network_Security_FINAL_w_cover.pdf",0,517110,"505 kB",1724268566,"8/21/24, 9:29:26 PM");</script>
+<script>addRow("bier garten trace.ai","bier%20garten%20trace.ai",0,41496818,"39.6 MB",1680905273,"4/8/23, 12:07:53 AM");</script>
+<script>addRow("BoH UCI Notes.docx","BoH%20UCI%20Notes.docx",0,325536,"318 kB",1693503934,"8/31/23, 7:45:34 PM");</script>
+<script>addRow("Bottom Bar with Circular Cutout - Portrait.ai","Bottom%20Bar%20with%20Circular%20Cutout%20-%20Portrait.ai",0,212927,"208 kB",1688060664,"6/29/23, 7:44:24 PM");</script>
+<script>addRow("Bottom Bar with Circular Cutout.ai","Bottom%20Bar%20with%20Circular%20Cutout.ai",0,211163,"206 kB",1688060652,"6/29/23, 7:44:12 PM");</script>
+<script>addRow("br0.xml","br0.xml",0,101,"101 B",1681507739,"4/14/23, 11:28:59 PM");</script>
+<script>addRow("Building Room Rev 3.qsys","Building%20Room%20Rev%203.qsys",0,6317681,"6.0 MB",1730817761,"11/5/24, 3:42:41 PM");</script>
+<script>addRow("Building Room Rev 3a.qsys","Building%20Room%20Rev%203a.qsys",0,6476402,"6.2 MB",1730833241,"11/5/24, 8:00:41 PM");</script>
+<script>addRow("Casa Ranchez v8.qsys","Casa%20Ranchez%20v8.qsys",0,45546519,"43.4 MB",1697124326,"10/12/23, 5:25:26 PM");</script>
+<script>addRow("Catering.png","Catering.png",0,368196,"360 kB",1709233801,"2/29/24, 8:10:01 PM");</script>
+<script>addRow("Cloud Cores.docx","Cloud%20Cores.docx",0,13522,"13.2 kB",1681220679,"4/11/23, 3:44:39 PM");</script>
+<script>addRow("collaboration-endpoint-software-api-reference-guide-ce94.pdf","collaboration-endpoint-software-api-reference-guide-ce94.pdf",0,10756937,"10.3 MB",1695855353,"9/28/23, 12:55:53 AM");</script>
+<script>addRow("Communities Content Planning.xlsx","Communities%20Content%20Planning.xlsx",0,24148,"23.6 kB",1725033339,"8/30/24, 5:55:39 PM");</script>
+<script>addRow("Component Selector Testing.qsys","Component%20Selector%20Testing.qsys",0,298236,"291 kB",1728675159,"10/11/24, 9:32:39 PM");</script>
+<script>addRow("Cool Q-Sys Stuff","Cool%20Q-Sys%20Stuff",0,0,"0 B",1743599031,"4/2/25, 3:03:51 PM");</script>
+<script>addRow("CSS Image Bug Example.qsys","CSS%20Image%20Bug%20Example.qsys",0,515122,"503 kB",1741978946,"3/14/25, 8:02:26 PM");</script>
+<script>addRow("CSS Styles.zip","CSS%20Styles.zip",0,4089054,"3.9 MB",1724253766,"8/21/24, 5:22:46 PM");</script>
+<script>addRow("CSS Test.qsys","CSS%20Test.qsys",0,196550,"192 kB",1706536428,"1/29/24, 2:53:48 PM");</script>
+<script>addRow("cue notes.txt","cue%20notes.txt",0,325,"325 B",1738498908,"2/2/25, 1:21:48 PM");</script>
+<script>addRow("Cult of Margie Flyers.indd","Cult%20of%20Margie%20Flyers.indd",0,1417216,"1.4 MB",1733675420,"12/8/24, 5:30:20 PM");</script>
+<script>addRow("Cult of Margie Pricing.indd","Cult%20of%20Margie%20Pricing.indd",0,1351680,"1.3 MB",1733751369,"12/9/24, 2:36:09 PM");</script>
+<script>addRow("DebugOutput.txt","DebugOutput.txt",0,50255,"49.1 kB",1746708848,"5/8/25, 2:54:08 PM");</script>
+<script>addRow("Deep Dive - A Tour of Communities.docx","Deep%20Dive%20-%20A%20Tour%20of%20Communities.docx",0,22380,"21.9 kB",1725559049,"9/5/24, 7:57:29 PM");</script>
+<script>addRow("Deep Dive - Deploying Large Scale Systems.docx","Deep%20Dive%20-%20Deploying%20Large%20Scale%20Systems.docx",0,17160,"16.8 kB",1706623559,"1/30/24, 3:05:59 PM");</script>
+<script>addRow("Default.rdp","Default.rdp",0,2338,"2.3 kB",1698791007,"10/31/23, 11:23:27 PM");</script>
+<script>addRow("Default.uci","Default.uci",0,231347,"226 kB",1698856846,"11/1/23, 5:40:46 PM");</script>
+<script>addRow("Demo Core.qsys","Demo%20Core.qsys",0,11721,"11.4 kB",1687285526,"6/20/23, 8:25:26 PM");</script>
+<script>addRow("Demo vCore - QRDC - Quilterstone 2024-01-22.qsys","Demo%20vCore%20-%20QRDC%20-%20Quilterstone%202024-01-22.qsys",0,31644239,"30.2 MB",1711396147,"3/25/24, 8:49:07 PM");</script>
+<script>addRow("Designer 9-12 Exception.txt","Designer%209-12%20Exception.txt",0,677489,"662 kB",1727699711,"9/30/24, 2:35:11 PM");</script>
+<script>addRow("desktop.ini","desktop.ini",0,418,"418 B",1767988991,"1/9/26, 9:03:11 PM");</script>
+<script>addRow("Ewan's Loading Icons v4.qsys","Ewan's%20Loading%20Icons%20v4.qsys",0,51061,"49.9 kB",1666658404,"10/25/22, 2:40:04 AM");</script>
+<script>addRow("Example UCI.qsys","Example%20UCI.qsys",0,26270610,"25.1 MB",1677691436,"3/1/23, 6:23:56 PM");</script>
+<script>addRow("External Controls.xml","External%20Controls.xml",0,303,"303 B",1687793277,"6/26/23, 5:27:57 PM");</script>
+<script>addRow("Flexbox Testing.qsys","Flexbox%20Testing.qsys",0,1754377,"1.7 MB",1743621782,"4/2/25, 9:23:02 PM");</script>
+<script>addRow("FY25 Performance Review Hope Roth.pdf","FY25%20Performance%20Review%20Hope%20Roth.pdf",0,182727,"178 kB",1752515017,"7/14/25, 7:43:37 PM");</script>
+<script>addRow("Gain Staging.url","Gain%20Staging.url",0,299,"299 B",1665408506,"10/10/22, 3:28:26 PM");</script>
+<script>addRow("GCP.txt","GCP.txt",0,1373,"1.3 kB",1681740260,"4/17/23, 4:04:20 PM");</script>
+<script>addRow("gnatcatcher.psd","gnatcatcher.psd",0,1138121,"1.1 MB",1707508269,"2/9/24, 8:51:09 PM");</script>
+<script>addRow("govnah","govnah",0,763,"763 B",1674497458,"1/23/23, 7:10:58 PM");</script>
+<script>addRow("Harassement Certificate 10-2022.pdf","Harassement%20Certificate%2010-2022.pdf",0,874880,"854 kB",1664977489,"10/5/22, 3:44:49 PM");</script>
+<script>addRow("home.png","home.png",0,284,"284 B",1700149259,"11/16/23, 4:40:59 PM");</script>
+<script>addRow("IC23_ComplexSystems_Outline.docx","IC23_ComplexSystems_Outline.docx",0,17003,"16.6 kB",1684848740,"5/23/23, 3:32:20 PM");</script>
+<script>addRow("Image20230726114648.png","Image20230726114648.png",0,195932,"191 kB",1690386372,"7/26/23, 5:46:12 PM");</script>
+<script>addRow("IMG_0043.JPEG","IMG_0043.JPEG",0,129063,"126 kB",1730146097,"10/28/24, 9:08:17 PM");</script>
+<script>addRow("IMG_8459.MP4","IMG_8459.MP4",0,4434370,"4.2 MB",1714405863,"4/29/24, 5:51:03 PM");</script>
+<script>addRow("Infocomm Sessions 2025.docx","Infocomm%20Sessions%202025.docx",0,15554,"15.2 kB",1727111265,"9/23/24, 7:07:45 PM");</script>
+<script>addRow("InfoComm-Staff-V6.pdf","InfoComm-Staff-V6.pdf",0,3136840,"3.0 MB",1654604489,"6/7/22, 2:21:29 PM");</script>
+<script>addRow("Json Example.qsys","Json%20Example.qsys",0,22097,"21.6 kB",1697808142,"10/20/23, 3:22:22 PM");</script>
+<script>addRow("Listbox Test.qsys","Listbox%20Test.qsys",0,190269,"186 kB",1707258419,"2/6/24, 11:26:59 PM");</script>
+<script>addRow("make your own music.ai","make%20your%20own%20music.ai",0,1748742,"1.7 MB",1678368990,"3/9/23, 2:36:30 PM");</script>
+<script>addRow("Malden family paralyzed by immigration system.pdf","Malden%20family%20paralyzed%20by%20immigration%20system.pdf",0,14481828,"13.8 MB",1727725467,"9/30/24, 9:44:27 PM");</script>
+<script>addRow("Mentor Agreement.pdf","Mentor%20Agreement.pdf",0,277133,"271 kB",1725043870,"8/30/24, 8:51:10 PM");</script>
+<script>addRow("Notification Letter National Council Delegate Alternate.pdf","Notification%20Letter%20National%20Council%20Delegate%20Alternate.pdf",0,309378,"302 kB",1740494331,"2/25/25, 3:38:51 PM");</script>
+<script>addRow("page-nav.lua","page-nav.lua",0,5524,"5.4 kB",1718973522,"6/21/24, 2:38:42 PM");</script>
+<script>addRow("Potential Ideas.txt","Potential%20Ideas.txt",0,1698,"1.7 kB",1748299497,"5/27/25, 12:44:57 AM");</script>
+<script>addRow("Printed version Speaker Agreement for IC24_instructors .docx","Printed%20version%20Speaker%20Agreement%20for%20IC24_instructors%20.docx",0,42998,"42.0 kB",1704749997,"1/8/24, 10:39:57 PM");</script>
+<script>addRow("PS-03908_Messi-DeltaDental-DiviConfRm_982_DKB_v3.0-Testing.qsys","PS-03908_Messi-DeltaDental-DiviConfRm_982_DKB_v3.0-Testing.qsys",0,9059532,"8.6 MB",1702910744,"12/18/23, 3:45:44 PM");</script>
+<script>addRow("Putty Private Key QSYS.ppk","Putty%20Private%20Key%20QSYS.ppk",0,462,"462 B",1732742081,"11/27/24, 10:14:41 PM");</script>
+<script>addRow("Q-SYS High Impact Office fw9_12_1 v1_3.qsys","Q-SYS%20High%20Impact%20Office%20fw9_12_1%20v1_3.qsys",0,8220422,"7.8 MB",1736537352,"1/10/25, 8:29:12 PM");</script>
+<script>addRow("QSC_Easy_Launcher.exe","QSC_Easy_Launcher.exe",0,19652096,"18.7 MB",1715605088,"5/13/24, 2:58:08 PM");</script>
+<script>addRow("Quilterstone.png","Quilterstone.png",0,172632,"169 kB",1706105387,"1/24/24, 3:09:47 PM");</script>
+<script>addRow("rawceek.ai","rawceek.ai",0,82091647,"78.3 MB",1680093706,"3/29/23, 2:41:46 PM");</script>
+<script>addRow("Reflect vCores.xlsx","Reflect%20vCores.xlsx",0,10597,"10.3 kB",1717514186,"6/4/24, 5:16:26 PM");</script>
+<script>addRow("Roster.pdf","Roster.pdf",0,76938,"75.1 kB",1736525057,"1/10/25, 5:04:17 PM");</script>
+<script>addRow("Screenshot 2024-09-11 133323.png","Screenshot%202024-09-11%20133323.png",0,3937,"3.8 kB",1726076008,"9/11/24, 7:33:28 PM");</script>
+<script>addRow("Screenshot 2024-09-11 140918.png","Screenshot%202024-09-11%20140918.png",0,67574,"66.0 kB",1726078162,"9/11/24, 8:09:22 PM");</script>
+<script>addRow("Script Test.qsys","Script%20Test.qsys",0,20322,"19.8 kB",1711047928,"3/21/24, 8:05:28 PM");</script>
+<script>addRow("Self Eval - 2023.docx","Self%20Eval%20-%202023.docx",0,17436,"17.0 kB",1691790786,"8/11/23, 11:53:06 PM");</script>
+<script>addRow("Self Tester v2 Concept.qsys","Self%20Tester%20v2%20Concept.qsys",0,38107,"37.2 kB",1708985749,"2/26/24, 11:15:49 PM");</script>
+<script>addRow("SewCraftyJess_ Christmas in July_ E-Reader Sleeve Tutorial.pdf","SewCraftyJess_%20Christmas%20in%20July_%20E-Reader%20Sleeve%20Tutorial.pdf",0,3717204,"3.5 MB",1685021471,"5/25/23, 3:31:11 PM");</script>
+<script>addRow("site report 10-23.txt","site%20report%2010-23.txt",0,201,"201 B",1698155723,"10/24/23, 3:55:23 PM");</script>
+<script>addRow("st.lua","st.lua",0,86055,"84.0 kB",1680029439,"3/28/23, 8:50:39 PM");</script>
+<script>addRow("standings.json","standings.json",0,192,"192 B",1684957422,"5/24/23, 9:43:42 PM");</script>
+<script>addRow("State Trigger EH test.qsys","State%20Trigger%20EH%20test.qsys",0,24316,"23.7 kB",1715368309,"5/10/24, 9:11:49 PM");</script>
+<script>addRow("Styles.zip","Styles.zip",0,2454931,"2.3 MB",1680279900,"3/31/23, 6:25:00 PM");</script>
+<script>addRow("Support Class.qsys","Support%20Class.qsys",0,31034,"30.3 kB",1702505097,"12/13/23, 11:04:57 PM");</script>
+<script>addRow("SwitchCase Tester.qsys","SwitchCase%20Tester.qsys",0,15520,"15.2 kB",1664811150,"10/3/22, 5:32:30 PM");</script>
+<script>addRow("Template for deep dives.pdf","Template%20for%20deep%20dives.pdf",0,65928,"64.4 kB",1697132215,"10/12/23, 7:36:55 PM");</script>
+<script>addRow("test.lua","test.lua",0,1376,"1.3 kB",1746795033,"5/9/25, 2:50:33 PM");</script>
+<script>addRow("test.qsys","test.qsys",0,21368,"20.9 kB",1705606959,"1/18/24, 8:42:39 PM");</script>
+<script>addRow("todo tree settings.json","todo%20tree%20settings.json",0,2737,"2.7 kB",1665766280,"10/14/22, 6:51:20 PM");</script>
+<script>addRow("UCI Plus Example.qsys","UCI%20Plus%20Example.qsys",0,6187261,"5.9 MB",1662134372,"9/2/22, 5:59:32 PM");</script>
+<script>addRow("UCI Prelim Template.indd","UCI%20Prelim%20Template.indd",0,1138688,"1.1 MB",1685635428,"6/1/23, 6:03:48 PM");</script>
+<script>addRow("UCI Script Notifications-Final.qsys","UCI%20Script%20Notifications-Final.qsys",0,2553135,"2.4 MB",1741015015,"3/3/25, 4:16:55 PM");</script>
+<script>addRow("UciVariableTest.qsys","UciVariableTest.qsys",0,14911,"14.6 kB",1715090988,"5/7/24, 4:09:48 PM");</script>
+<script>addRow("Untitled-1.json","Untitled-1.json",0,98,"98 B",1725646676,"9/6/24, 8:17:56 PM");</script>
+<script>addRow("Untitled-2.lua","Untitled-2.lua",0,210,"210 B",1717770271,"6/7/24, 4:24:31 PM");</script>
+<script>addRow("Waves of Influence Agreement Letter.docx","Waves%20of%20Influence%20Agreement%20Letter.docx",0,15814,"15.4 kB",1725045640,"8/30/24, 9:20:40 PM");</script>
+<script>addRow("WAVIT-AM&S Marketing Intern Program.docx","WAVIT-AM&S%20Marketing%20Intern%20Program.docx",0,39862,"38.9 kB",1709759335,"3/6/24, 10:08:55 PM");</script>
+<script>addRow("Web-Summit-Conference-Brand-Guidelines-Example.png","Web-Summit-Conference-Brand-Guidelines-Example.png",0,142992,"140 kB",1685020969,"5/25/23, 3:22:49 PM");</script>
+<script>addRow("Women in Computer Science Presentation.pptx","Women%20in%20Computer%20Science%20Presentation.pptx",0,20937187,"20.0 MB",1713562815,"4/19/24, 11:40:15 PM");</script>

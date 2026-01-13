@@ -1,0 +1,44 @@
+        /*
+        CSS Extension Example Class
+        Created by  Hope Roth - QSC
+
+        Version 1.0
+        January 2025
+
+        */
+
+        @import url(CSS_Example);
+
+        :root {
+            --DarkColor: #2c3740;
+            --LightColor: #ffffff;
+            --DarkGreyColor: #404040;
+            --MediumGreyColor: #616262;
+            --LightGreyColor: #e6e9ed;
+
+            --PrimaryColor: #F24464;
+            --Color2: #2E84A6;
+            --Color3: #D9CAAD;
+            --Color4: #F2B6A0;
+            --Color5: #590202;
+
+            --PrimaryColorLight: #fab4c1;
+            --Color2Light: #abcedb;
+            --Color3Light: #f0eade;
+            --Color4Light: #f7d3c6;
+            --Color5Light: #ac8181;
+
+            --PrimaryColorDark: #49141e;
+            --Color2Dark: #123542;
+            --Color3Dark: #2b2823;
+            --Color4Dark: #072b2b;
+            --Color5Dark: #240101;
+
+            --StopColor: #b40f00;
+            --GoColor: #77DB21;
+
+        }
+
+        page {
+            background-image: url("backgrounds/bg2.png");
+        }

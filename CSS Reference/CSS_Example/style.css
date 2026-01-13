@@ -1,0 +1,1625 @@
+        /*
+        CSS Example Class
+        Created by  Hope Roth - QSC
+
+        Version 1.1
+        January 2025 - fixed typo in knob controls
+
+        */
+
+        /* Import Icon Font */
+        @font-face {
+            font-family: "Phosphor";
+            src: url(fonts/Phosphor.ttf );
+        }
+
+        /* Import TTF Font */
+        @font-face {
+            font-family: "PlaywriteDEVAGuides";
+            src: url(fonts/PlaywriteDEVAGuides-Regular.ttf );
+        }
+
+        /* Import OTF Font */
+        @font-face {
+            font-family: "Foglihten";
+            src: url(fonts/Foglihtenno07-e9wz3.otf );
+            format: ("opentype");
+        }
+
+        /* CSS Variables for default behaviors */
+
+        :root {
+            --DarkColor: #2c3740;
+            --LightColor: #ffffff;
+            --DarkGreyColor: #404040;
+            --MediumGreyColor: #616262;
+            --LightGreyColor: #e6e9ed;
+
+            --PrimaryColor: #F244B5;
+            --Color2: #139DF2;
+            --Color3: #1AB6D9;
+            --Color4: #23D9D9;
+            --Color5: #F27649;
+
+            --PrimaryColorLight: #fbc7e9;
+            --Color2Light: #a1d8fa;
+            --Color3Light: #a3e2f0;
+            --Color4Light: #a7f0f0;
+            --Color5Light: #f9bba4;
+
+            --PrimaryColorDark: #300e24;
+            --Color2Dark: #041f30;
+            --Color3Dark: #05242b;
+            --Color4Dark: #072b2b;
+            --Color5Dark: #180c07;
+
+            --StopColor: #b40f00;
+            --GoColor: #77DB21;
+
+            --MyFont: "Open Sans";
+            --BorderDecoration: 2px;
+            --BorderRadius: 8px;
+            --CssContent: "Change Me";
+            --HeaderText: "Dynamic Header Text";
+            --DynamicColor1: transparent;
+
+
+            /* Base64 Encoding for an image */
+            --BackgroundImage: url('data:image/png;base64,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');
+        }
+
+        /* built-in controls */
+        /* these properties will be applied automatically to any control added to a UCI */
+
+        page {
+
+            background-color: var(--LightGreyColor);
+            background-image: url("backgrounds/vintage-orange.png");
+            background-position: left;
+
+            /* swap these values around and see what happens */
+            background-size: 25% 100%;
+            background-repeat: repeat;
+            /* alternative syntax: 
+            background:url("images/CatCloudBg.png") ;
+            */
+        }
+
+        /******** Button Controls ********/
+
+        /* Default Button Style - This is what buttons will look like when they are added to the UCI */
+
+        button {
+            background-color: var(--Color2);
+            color: var(--LightColor);
+            font-family: var(--MyFont);
+
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--Color2Dark);
+            /*     
+            border-top: 15px;
+            border-top-color: Red;
+            */
+
+            font-size: 28vmin;
+            text-align: center;
+            vertical-align: center;
+
+            /* try uppercase and lowercase */
+            text-transform: capitalize;
+        }
+
+        /* this is what a button will look like when pressed down and value is false */
+        button:pressed {
+            background-color: var(--Color5);
+            border: var(--BorderDecoration) var(--Color5Light);
+            border-top: 3px;
+            border-top-color: var(--Color5Dark);
+        }
+
+        /* this is what a button will look like when its value is true/1 */
+        button:value(1) {
+            background-color: var(--PrimaryColor);
+            border: 6px var(--PrimaryColorDark);
+        }
+
+        /*for state triggers, this is what buttons will look like with values 2 and greater */
+        button:value(2) {
+            background-color: var(--Color2);
+        }
+
+        button:value(3) {
+            background-color: var(--Color3Light);
+        }
+
+        button:value(4) {
+            background-color: var(--Color4Dark);
+        }
+
+        button:value(5) {
+            background-color: var(--Color5Dark);
+        }
+
+        /*this is what a button will look like when pressed down and its value is true */
+        button:pressed:value(1) {
+            background-color: var(--Color2Light);
+            border-top: 3px var(--Color2);
+        }
+
+        /* here are buttons that use images as their background */
+        .button-image {
+            background-image: url(images/btn-3.png);
+            background: transparent;
+            border-width: 0px;
+        }
+
+        .button-image:pressed {
+            background-image: url(images/btn-2.png);
+            background: transparent;
+            border-width: 0px;
+        }
+
+        .button-image:value(1) {
+            background-image: url(images/btn-1.png);
+            background: transparent;
+            border-width: 0px;
+        }
+
+        .button-image:pressed:value(1) {
+            background-image: url(images/btn-4.png);
+            background: transparent;
+            border-width: 0px;
+        }
+
+        /* a button image doesn't have to look like a classic button... it could be a dinosaur! */
+
+        .button-dino {
+            background-image: url(images/dino-1-reversed.png);
+            background-size: auto 80%;
+            background: transparent;
+            border-width: 0px;
+            color: var(--Color3Dark);
+            font-size: 14vmin;
+            vertical-align: bottom;
+            text-align: left;
+        }
+
+        /* icon buttons are great ways to style buttons using an icon font. please see the Icons section for the icons themselves */
+        .button-icon {
+            -qsc-icon-font: "Phosphor";
+            -qsc-icon-color: var(--Color2);
+            content: "";
+            background-color: transparent;
+            color: var(--Color2Dark);
+            border: 0px transparent;
+        }
+
+        .button-icon:pressed {
+            -qsc-icon-font: "Phosphor";
+            -qsc-icon-color: var(--Color5);
+            content: "";
+            background-color: transparent;
+            color: var(--Color2Dark);
+            border: 0px transparent;
+        }
+
+        .button-icon:value(1) {
+            -qsc-icon-font: "Phosphor";
+            -qsc-icon-color: var(--PrimaryColor);
+            content: "";
+            background-color: transparent;
+            color: var(--PrimaryColorDark);
+            border: 0px transparent;
+        }
+
+        .button-icon:pressed:value(1) {
+            -qsc-icon-font: "Phosphor";
+            -qsc-icon-color: var(--Color2Light);
+            content: "";
+            background-color: transparent;
+            color: var(--Color2Dark);
+            border: 0px transparent;
+        }
+
+        /* this is the style for the navigation buttons on the left side of the UCI */
+
+        .button-nav {
+            background-color: var(--MediumGreyColor);
+            border: var(--BorderDecoration) var(--Color5Dark);
+            color: var(--LightColor);
+        }
+
+        .button-popup {
+            background-color: transparent;
+            border: 0px transparent;
+        }
+
+
+        /******** Icons ********/
+
+        .icon-checkbox {
+            -qsc-icon: "\F9C2";
+        }
+
+        .icon-checkbox:value(1) {
+            -qsc-icon: "\F757";
+        }
+
+        .icon-radio {
+            -qsc-icon: "\F75A";
+        }
+
+        .icon-radio:value(1) {
+            -qsc-icon: "\FD79";
+        }
+
+        .icon-xSquare {
+            -qsc-icon: "\F9C2";
+        }
+
+        .icon-xSquare:value(1) {
+            -qsc-icon: "\FA5B";
+        }
+
+        /******** Graphic Tool Controls ********/
+
+
+        /*this is what a flexbox will look like when it's dragged onto a UCI */
+        flexbox {
+            background-color: transparent;
+            border: 0px transparent;
+            border-radius: var(--BorderRadius);
+            margin: 0px;
+            padding: 2px;
+
+            /* the direction can be row or column */
+            flex-direction: row;
+
+            /*flex-wrap can be wrap or nowrap */
+            flex-wrap: wrap;
+
+            /* justify content options: center, flex-start, flex-end, space-around, space-between, space-evenly*/
+            justify-content: center;
+
+            /* align content options: center, flex-start, flex-end, space-around, space-between, space-evenly*/
+            align-content: center;
+
+            /* align items options: center, flex-start, flex-end, */
+            align-items: center;
+
+            gap: 4px;
+        }
+
+        /* we can make the background of a flexbox a solid */
+        .flexbox-solid {
+            background-color: var(--LightColor);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        /* we can make the background of a flexbox a gradient */
+        .flexbox-gradient {
+            background-image: linear-gradient(0deg, var(--Color5Light) 10%, var(--Color5) 50%, var(--Color5Dark) 100%);
+            border: var(--BorderDecoration) var(--DarkColor);
+            align-content: flex-end;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        /* we can use an image as the background of a flexbox */
+        .flexbox-image {
+            background-image: url(images/CatCloudBg.png);
+            background-size: 100% auto;
+            border: var(--BorderDecoration) var(--Color3Dark);
+            padding: 12px;
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        /*this is what a groupbox will look like when it's dragged onto a UCI */
+        groupbox {
+            border-radius: var(--BorderRadius);
+            background-color: var(--LightColor);
+            color: var(--PrimaryColorDark);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+            font-family: var(--MyFont);
+            font-size: 18px;
+        }
+
+        /* we can make the background of a groupbox a gradient */
+        .groupbox-gradient {
+            background-image: linear-gradient(0deg, var(--Color2Light) 10%, var(--Color2) 50%, var(--Color2Dark) 100%);
+            color: var(--Color4Dark);
+            border: var(--BorderDecoration) var(--Color4Dark);
+        }
+
+        /* we can change the color of a groupbox (or any control that has a color property) using a CSS Variable and a UCI Variable that are named exactly the same */
+        .groupbox-dynamic {
+            background-color: var(--DynamicColor1);
+            color: var(--DarkColor);
+            border: var(--BorderDecoration) var(--DarkColor);
+        }
+
+        /* we can use an image as the background of a group box */
+        .groupbox-image {
+            background-image: url(images/CatCloudBg.png);
+            background-size: 100% auto;
+            border: var(--BorderDecoration) var(--Color3Dark);
+            color: var(--Color3Dark);
+        }
+
+        /* this is what a polygon will look like when it's first created (with no other styles applied to it) */
+        polygon {
+            background-color: var(--Color2Light);
+            border: var(--BorderDecoration) var(--PrimaryColor);
+            color: var(--Color2Dark);
+            font-family: var(--MyFont);
+            font-size: 10vmin;
+            vertical-align: bottom;
+        }
+
+        /* we can use a gradient to style the background of a polygon */
+        .polygon-gradient {
+            background-image: linear-gradient(0deg, var(--Color2Light) 10%, var(--Color2) 50%, var(--Color2Dark) 100%);
+            color: var(--PrimaryColor);
+            border: var(--BorderDecoration) var(--PrimaryColor);
+        }
+
+        /*we can use an image as the background of a polygon */
+        .polygon-image {
+            background-image: url(images/CatCloudBg.png);
+            background-size: 100% auto;
+            border: var(--BorderDecoration) var(--Color4);
+            vertical-align: top;
+            color: var(--PrimaryColorDark);
+        }
+
+        /* we can make the background of a button a base64 encoded image */
+        .base64-image {
+            background-image: var(--BackgroundImage);
+            background-color: var(--LightColor);
+            background-size: 80%;
+        }
+
+        /******** Text Controls ********/
+
+        /* this is what a textblock will look like when dropped onto a UCI */
+        textblock {
+            font-family: var(--MyFont);
+            font-size: 32vmin;
+            color: var(--Color2Dark);
+        }
+
+        /* this is a text style with a dynamic background color and content */
+        .textblock-dynamic {
+            background-color: var(--Color5);
+            border: var(--BorderDecoration) var(--DarkGreyColor);
+            color: var(--LightColor);
+            content: var(--CssContent);
+        }
+
+        /*this is a text style with an image background */
+        .textblock-image {
+            background-image: url(images/groupbox.png);
+            border: var(--BorderDecoration) var(--DarkGreyColor);
+            content: var(--CssContent);
+            color: var(--DarkColor)
+        }
+
+        /*this is what a combobox will look like when dropped onto a UCI */
+        combobox {
+            font-family: var(--MyFont);
+            font-size: 42vmin;
+            border: var(--BorderDecoration) var(--Color3);
+        }
+
+        /* this is what a textbox will look like when dropped onto a UCI */
+        textbox {
+            font-family: var(--MyFont);
+            font-size: 36vmin;
+            color: var(--PrimaryColor);
+
+            /* comment this out to revert to default colors */
+            background-color: transparent;
+
+            /* comment this out to revert to default border */
+            border: 0px transparent;
+        }
+
+        /*this is what a listbox will look like when dropped onto a UCI */
+        listbox {
+            font-family: var(--MyFont);
+            font-size: 18px;
+            border: var(--BorderDecoration) var(--Color5);
+        }
+
+        /* this is what a header will look like when it's dragged onto the UCI */
+        header {
+            color: var(--Color3Dark);
+            font-family: var(--MyFont);
+            font-size: 36vmin;
+        }
+
+        /* here is an example of using the "content" property to change the text of a header at runtime */
+
+        .header-text {
+            color: var(--PrimaryColorDark);
+            font-size: 24vmin;
+            content: var(--HeaderText);
+        }
+
+        /* these are the instructions that appear on every page to explain how the controls are setup */
+
+        .instructions {
+            color: var(--Color2Dark);
+            font-size: 28px;
+            background-color: transparent;
+            border: 0px transparent;
+            -qsc-font-style: normal;
+            text-align: left;
+            vertical-align: center;
+            padding: 12px;
+        }
+
+        /* a text style used for text labels */
+        .label {
+            color: var(--Color3Dark);
+            font-size: 42vmin;
+            background-color: transparent;
+            border: 0px transparent;
+            -qsc-font-style: normal;
+        }
+
+        /* this is the information at the bottom right of every page */
+        .page-label {
+            color: var(--Color2Dark);
+            font-size: 64vh;
+            text-align: right;
+            padding: 18px;
+            background-color: transparent;
+            border: 0px transparent;
+            -qsc-font-style: bold;
+        }
+
+        /******** Status Controls ********/
+
+        /* this is a default LED with its state set to false */
+        led {
+            background-color: var(--StopColor);
+            border-width: 0px;
+        }
+
+        /*this is a default LED with its state set to true/1 */
+        led:value(1) {
+            background-color: var(--GoColor);
+        }
+
+        /*here are values for LEDs that have integer ranges above 1. please see the knobs section for an example */
+
+        .led-integer:value(1) {
+            background-color: var(--PrimaryColorLight);
+            border: var(--BorderDecoration) var(--PrimaryColor);
+        }
+
+        .led-integer:value(2) {
+            background-color: var(--Color2Light);
+            border: var(--BorderDecoration) var(--Color2);
+        }
+
+        .led-integer:value(3) {
+            background-color: var(--Color3Light);
+            border: var(--BorderDecoration) var(--Color3);
+        }
+
+        .led-integer:value(4) {
+            background-color: var(--Color4Light);
+            border: var(--BorderDecoration) var(--Color4);
+        }
+
+        .led-integer:value(5) {
+            background-color: var(--Color5Light);
+            border: var(--BorderDecoration) var(--Color5);
+        }
+
+        /*here we style an LED using an image instead of setting colors*/
+        .led-image {
+            background-image: url(images/led-red.png);
+            background-size: 100% 100%;
+            background-color: transparent;
+            border: 0px transparent;
+        }
+
+        .led-image:value(1) {
+            background-image: url(images/led-black.png);
+            background-color: transparent;
+            border: 0px transparent;
+        }
+
+        /*please see the knobs section for an example of LEDs with higher value ranges */
+        .led-image:value(30) {
+            background-image: url(images/led-white.png);
+            background-color: transparent;
+            border: 0px transparent;
+        }
+
+        .led-image:value(60) {
+            background-image: url(images/led-yellow.png);
+            background-color: transparent;
+            border: 0px transparent;
+        }
+
+        .led-image:value(80) {
+            background-image: url(images/led-green.png);
+            background-color: transparent;
+            border: 0px transparent;
+        }
+
+        /******** knob, fader and meter controls ********/
+
+        /* here is the default fader style, using the layers method for styling. please see the qsys help file for more information about how fader styling works */
+        fader {
+            -qsc-render-style: layer;
+            -qsc-fader-slot-class: fader-slot;
+            -qsc-fader-slot-width: 20px;
+            -qsc-fader-cap-class: fader-cap;
+            -qsc-fader-cap-height: 80vmin;
+            -qsc-fader-cap-width: 80vmin;
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+            background-color: var(--LightColor);
+        }
+
+        fader.vertical {
+            -qsc-fader-cap-width: 25vw;
+            -qsc-fader-cap-height: 25vw;
+        }
+
+        fader.horizontal {
+            -qsc-fader-cap-width: 25vh;
+            -qsc-fader-cap-height: 25vh;
+        }
+
+        .fader-slot {
+            background-color: var(--DarkGreyColor);
+            border: var(--BorderDecoration);
+            border-color: var(--DarkColor);
+        }
+
+        .fader-slot:value(1) {
+            background-color: var(--Color4Light);
+        }
+
+        .fader-slot:pressed:value(1) {
+            background-color: var(--PrimaryColorLight);
+        }
+
+        .fader-cap {
+            background-color: var(--LightGreyColor);
+            border-color: var(--Color2Dark);
+            border-width: var(--BorderDecoration);
+            border-radius: 300px;
+        }
+
+        .fader-cap:pressed {
+            background-color: var(--PrimaryColor);
+            border-color: var(--PrimaryColorDark);
+        }
+
+
+        /*this fader style uses an image for its cap*/
+        .fader-image-cap {
+            -qsc-render-style: layer;
+            -qsc-fader-slot-class: fader-slot;
+            -qsc-fader-cap-class: fader-cap-image;
+            -qsc-fader-slot-width: 20px;
+            -qsc-fader-cap-height: 80vmin;
+            -qsc-fader-cap-width: 80vmin;
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+            background-color: black;
+        }
+
+        .fader-cap-image {
+            background-color: transparent;
+            border: 0px transparent;
+            background: url(images/fader-cap-6.png);
+        }
+
+        .fader-cap-image:pressed {
+            background-color: transparent;
+            border: 0px transparent;
+            background: url(images/fader-cap-2.png);
+        }
+
+        /* here is a classic fader with very basic styling */
+        .fader-classic {
+            -qsc-render-style: classic;
+            -qsc-fader-slot-width: 20px;
+            -qsc-fader-cap-height: 80vmin;
+            -qsc-fader-cap-width: 80vmin;
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--StopColor);
+            background-color: var(--Color3);
+        }
+
+        /* we can get all fancy and use gradients to style the fader slot. we need different styles for horizontal and vertical so that the gradient goes in the correct direction */
+        .fader-gradient-vert {
+            -qsc-render-style: layer;
+            -qsc-fader-slot-class: fader-slot-gradient-vert;
+            -qsc-fader-slot-width: 20px;
+            -qsc-fader-cap-class: fader-cap;
+            -qsc-fader-cap-height: 80vmin;
+            -qsc-fader-cap-width: 80vmin;
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+            background-color: var(--LightColor);
+        }
+
+        .fader-slot-gradient-vert {
+            background-color: var(--MediumGreyColor);
+            border: var(--BorderDecoration);
+            border-color: var(--DarkColor);
+        }
+
+        .fader-slot-gradient-vert:value(1) {
+            background: linear-gradient(0deg, violet 0%, blue 20%, green 40%, yellow 60%, orange 80%, red 100%);
+        }
+
+        .fader-gradient-horz {
+            -qsc-render-style: layer;
+            -qsc-fader-slot-class: fader-slot-gradient-horz;
+            -qsc-fader-slot-width: 20px;
+            -qsc-fader-cap-class: fader-cap;
+            -qsc-fader-cap-height: 80vmin;
+            -qsc-fader-cap-width: 80vmin;
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+            background-color: var(--LightColor);
+        }
+
+        .fader-slot-gradient-horz {
+            background-color: var(--MediumGreyColor);
+            border: var(--BorderDecoration);
+            border-color: var(--DarkColor);
+        }
+
+        .fader-slot-gradient-horz:value(1) {
+            background: linear-gradient(90deg, violet 0%, blue 20%, green 40%, yellow 60%, orange 80%, red 100%);
+        }
+
+        /* here is a fader that uses images for its components */
+        .fader-image {
+            -qsc-render-style: layer;
+            -qsc-fader-cap-height: 25vh;
+            -qsc-fader-cap-width: 70vw;
+            -qsc-fader-slot-class: fader-slot-image;
+            -qsc-fader-cap-class: fader-cap-oldskool;
+            -qsc-fader-slot-width: 20vw;
+            background-color: var(--DarkGreyColor);
+            color: transparent;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .fader-slot-image {
+            background-image: url(images/fader-slot.png);
+            border: 0px transparent;
+        }
+
+        .fader-cap-oldskool {
+            background-image: url(images/fader-knob.png);
+            border: 0px transparent;
+            color: transparent;
+        }
+
+        /* here is a wild looking fader that uses the filmstrip method */
+
+        .fader-filmstrip {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-01.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.01) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-02.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.05) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-03.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.10) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-04.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.15) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-05.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.20) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-06.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.25) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-07.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.30) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-08.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.35) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-09.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.40) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-10.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.45) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-11.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.50) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-12.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.55) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-13.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.60) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-14.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.65) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-15.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.70) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-16.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.75) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-17.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.80) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-18.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.85) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-19.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.90) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-20.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(0.95) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-21.png);
+            border-radius: 0px;
+        }
+
+        .fader-filmstrip:value(1) {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/fader-22.png);
+            border-radius: 0px;
+        }
+
+        /* here is the default meter, it uses layer styling */
+
+        meter {
+            -qsc-render-style: layer;
+            -qsc-meter-indicator-class: meter-indicator;
+            background-color: var(--DarkGreyColor);
+            border-radius: var(--BorderRadius);
+            border: var(--BorderDecoration) var(--Color3Dark);
+            -qsc-meter-indicator-width: 60vw;
+            -qsc-meter-indicator-height: 90vh;
+        }
+
+        .meter-indicator {
+            background-color: var(--LightColor);
+            border: var(--BorderDecoration) var(--DarkColor);
+            border-radius: 18px;
+        }
+
+        .meter-indicator:value(1) {
+            background-color: var(--Color4);
+        }
+
+        /* a super simple classic meter */
+
+        .meter-classic {
+            -qsc-render-style: classic;
+            background-color: var(--DarkGreyColor);
+            color: var(--Color4);
+            border: var(--BorderDecoration) var(--DarkGreyColor);
+            border-radius: var(--BorderRadius);
+        }
+
+        /* we can use gradients for the meter indicator. they need to be designated as horizontal or vertical to ensure that the gradient lines up properly */
+        .meter-gradient-horz {
+            -qsc-meter-indicator-class: gradient-indicator-horz;
+        }
+
+        .gradient-indicator-horz {
+            background: var(--DarkColor);
+        }
+
+        .gradient-indicator-horz:value(1) {
+            background: linear-gradient(90deg, var(--PrimaryColorLight) 60%, var(--Color5) 90%, var(--StopColor) 100%);
+        }
+
+        .meter-gradient-vert {
+            -qsc-meter-indicator-class: gradient-indicator-vert;
+        }
+
+        .gradient-indicator-vert {
+            background: var(--DarkColor);
+        }
+
+        .gradient-indicator-vert:value(1) {
+            background: linear-gradient(0deg, var(--PrimaryColorLight) 60%, var(--Color5) 90%, var(--StopColor) 100%);
+        }
+
+        /* here's another gradient that's a full rainbow */
+
+        .meter-rainbow-gradient-horz {
+            -qsc-meter-indicator-class: gradient-rainbow-indicator-horz;
+        }
+
+        .gradient-rainbow-indicator-horz {
+            background: var(--DarkColor);
+        }
+
+        .gradient-rainbow-indicator-horz:value(1) {
+            background: linear-gradient(-90deg, red 0%, orange 20%, yellow 40%, green 60%, blue 80%, violet 100%);
+        }
+
+        .meter-rainbow-gradient-vert {
+            -qsc-meter-indicator-class: gradient-rainbow-indicator-vert;
+        }
+
+        .gradient-rainbow-indicator-vert {
+            background: var(--DarkColor);
+        }
+
+        .gradient-rainbow-indicator-vert:value(1) {
+            background: linear-gradient(180deg, red 0%, orange 20%, yellow 40%, green 60%, blue 80%, violet 100%);
+        }
+
+        /* here's a filmstrip meter that breaks the meter gauge into smaller colored segments, it requires a separate class for horizontal and vertical */
+
+        .meter-segmented-horz {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/Hori_Meter_1.svg);
+        }
+
+        /* horizontal meter values 1-20 */
+        .meter-segmented-horz:value(0.05) {
+            background-image: url(images/Hori_Meter_1.svg);
+        }
+
+        .meter-segmented-horz:value(0.10) {
+            background-image: url(images/Hori_Meter_2.svg);
+        }
+
+        .meter-segmented-horz:value(0.15) {
+            background-image: url(images/Hori_Meter_3.svg);
+        }
+
+        .meter-segmented-horz:value(0.20) {
+            background-image: url(images/Hori_Meter_4.svg);
+        }
+
+        .meter-segmented-horz:value(0.25) {
+            background-image: url(images/Hori_Meter_5.svg);
+        }
+
+        .meter-segmented-horz:value(0.30) {
+            background-image: url(images/Hori_Meter_6.svg);
+        }
+
+        .meter-segmented-horz:value(0.35) {
+            background-image: url(images/Hori_Meter_7.svg);
+        }
+
+        .meter-segmented-horz:value(0.40) {
+            background-image: url(images/Hori_Meter_8.svg);
+        }
+
+        .meter-segmented-horz:value(0.45) {
+            background-image: url(images/Hori_Meter_9.svg);
+        }
+
+        .meter-segmented-horz:value(0.50) {
+            background-image: url(images/Hori_Meter_10.svg);
+        }
+
+        .meter-segmented-horz:value(0.55) {
+            background-image: url(images/Hori_Meter_11.svg);
+        }
+
+        .meter-segmented-horz:value(0.60) {
+            background-image: url(images/Hori_Meter_12.svg);
+        }
+
+        .meter-segmented-horz:value(0.65) {
+            background-image: url(images/Hori_Meter_13.svg);
+        }
+
+        .meter-segmented-horz:value(0.70) {
+            background-image: url(images/Hori_Meter_14.svg);
+        }
+
+        .meter-segmented-horz:value(0.75) {
+            background-image: url(images/Hori_Meter_15.svg);
+        }
+
+        .meter-segmented-horz:value(0.80) {
+            background-image: url(images/Hori_Meter_16.svg);
+        }
+
+        .meter-segmented-horz:value(0.85) {
+            background-image: url(images/Hori_Meter_17.svg);
+        }
+
+        .meter-segmented-horz:value(0.90) {
+            background-image: url(images/Hori_Meter_18.svg);
+        }
+
+        .meter-segmented-horz:value(0.95) {
+            background-image: url(images/Hori_Meter_19.svg);
+        }
+
+        .meter-segmented-horz:value(1.00) {
+            background-image: url(images/Hori_Meter_20.svg);
+        }
+
+        .meter-segmented-vert {
+            -qsc-render-style: filmstrip;
+            background-image: url(images/Vert_Meter_1.svg);
+        }
+
+        /* vertical meter values 1-20 */
+        .meter-segmented-vert:value(0.05) {
+            background-image: url(images/Vert_Meter_1.svg);
+        }
+
+        .meter-segmented-vert:value(0.10) {
+            background-image: url(images/Vert_Meter_2.svg);
+        }
+
+        .meter-segmented-vert:value(0.15) {
+            background-image: url(images/Vert_Meter_3.svg);
+        }
+
+        .meter-segmented-vert:value(0.20) {
+            background-image: url(images/Vert_Meter_4.svg);
+        }
+
+        .meter-segmented-vert:value(0.25) {
+            background-image: url(images/Vert_Meter_5.svg);
+        }
+
+        .meter-segmented-vert:value(0.30) {
+            background-image: url(images/Vert_Meter_6.svg);
+        }
+
+        .meter-segmented-vert:value(0.35) {
+            background-image: url(images/Vert_Meter_7.svg);
+        }
+
+        .meter-segmented-vert:value(0.40) {
+            background-image: url(images/Vert_Meter_8.svg);
+        }
+
+        .meter-segmented-vert:value(0.45) {
+            background-image: url(images/Vert_Meter_9.svg);
+        }
+
+        .meter-segmented-vert:value(0.50) {
+            background-image: url(images/Vert_Meter_10.svg);
+        }
+
+        .meter-segmented-vert:value(0.55) {
+            background-image: url(images/Vert_Meter_11.svg);
+        }
+
+        .meter-segmented-vert:value(0.60) {
+            background-image: url(images/Vert_Meter_12.svg);
+        }
+
+        .meter-segmented-vert:value(0.65) {
+            background-image: url(images/Vert_Meter_13.svg);
+        }
+
+        .meter-segmented-vert:value(0.70) {
+            background-image: url(images/Vert_Meter_14.svg);
+        }
+
+        .meter-segmented-vert:value(0.75) {
+            background-image: url(images/Vert_Meter_15.svg);
+        }
+
+        .meter-segmented-vert:value(0.80) {
+            background-image: url(images/Vert_Meter_16.svg);
+        }
+
+        .meter-segmented-vert:value(0.85) {
+            background-image: url(images/Vert_Meter_17.svg);
+        }
+
+        .meter-segmented-vert:value(0.90) {
+            background-image: url(images/Vert_Meter_18.svg);
+        }
+
+        .meter-segmented-vert:value(0.95) {
+            background-image: url(images/Vert_Meter_19.svg);
+        }
+
+        .meter-segmented-vert:value(1.00) {
+            background-image: url(images/Vert_Meter_20.svg);
+        }
+
+        /*** Knobs ***/
+        /* Knob styling is based on absolute value (as opposed to position), so care should be taken that the value ranges of the control and the style match */
+
+        /* here is an integer knob that has values that can range from 0-5 */
+        .knob-integer {
+            background-color: var(--StopColor);
+        }
+
+        .knob-integer:value(1) {
+            background-color: var(--PrimaryColor);
+        }
+
+        .knob-integer:value(2) {
+            background-color: var(--Color2);
+        }
+
+        .knob-integer:value(3) {
+            background-color: var(--Color3);
+        }
+
+        .knob-integer:value(4) {
+            background-color: var(--Color4);
+        }
+
+        .knob-integer:value(5) {
+            background-color: var(--Color5);
+        }
+
+        /* here is a decibal knob that has values that can range from -100-20 */
+
+        .knob-dB:value(-100) {
+            background-color: var(--StopColor);
+        }
+
+        .knob-dB:value(-40) {
+            background-color: var(--Color5);
+        }
+
+        .knob-dB:value(-10) {
+            background-color: var(--Color4);
+        }
+
+        .knob-dB:value(0) {
+            background-color: var(--PrimaryColor);
+        }
+
+        .knob-dB:value(10) {
+            background-color: var(--Color2);
+        }
+
+        .knob-dB:value(20) {
+            background-color: var(--Color3);
+        }
+
+        .led-dB:value(-100) {
+            background-color: var(--StopColor);
+        }
+
+        .led-dB:value(-40) {
+            background-color: var(--Color5);
+            border: var(--BorderDecoration) var(--Color5Dark);
+        }
+
+        .led-dB:value(-10) {
+            background-color: var(--Color4);
+            border: var(--BorderDecoration) var(--Color4Dark);
+        }
+
+        .led-dB:value(0) {
+            background-color: var(--PrimaryColor);
+            border: var(--BorderDecoration) var(--PrimaryColorDark);
+        }
+
+        .led-dB:value(10) {
+            background-color: var(--Color2);
+            border: var(--BorderDecoration) var(--Color2Dark);
+        }
+
+        .led-dB:value(20) {
+            background-color: var(--Color3);
+            border: var(--BorderDecoration) var(--Color3Dark);
+        }
+
+        /* here is an image knob that is meant to match a percent knob. it uses the filmstrip method, which means that it has 101 possible values!) */
+
+        .knob-image {
+            -qsc-render-style: filmstrip;
+            border: 0px transparent;
+            background-color: black;
+            background-image: url(knob/muted-face.png);
+            background-size: 80% auto;
+
+        }
+
+        .knob-image:value(0.01) {
+            background-image: url(knob/1percent.png);
+        }
+
+        .knob-image:value(0.02) {
+            background-image: url(knob/2percent.png);
+        }
+
+        .knob-image:value(0.03) {
+            background-image: url(knob/3percent.png);
+        }
+
+        .knob-image:value(0.04) {
+            background-image: url(knob/4percent.png);
+        }
+
+        .knob-image:value(0.05) {
+            background-image: url(knob/5percent.png);
+        }
+
+        .knob-image:value(0.06) {
+            background-image: url(knob/6percent.png);
+        }
+
+        .knob-image:value(0.07) {
+            background-image: url(knob/7percent.png);
+        }
+
+        .knob-image:value(0.08) {
+            background-image: url(knob/8percent.png);
+        }
+
+        .knob-image:value(0.09) {
+            background-image: url(knob/9percent.png);
+        }
+
+        .knob-image:value(0.10) {
+            background-image: url(knob/10percent.png);
+        }
+
+        .knob-image:value(0.11) {
+            background-image: url(knob/11percent.png);
+        }
+
+        .knob-image:value(0.12) {
+            background-image: url(knob/12percent.png);
+        }
+
+        .knob-image:value(0.13) {
+            background-image: url(knob/13percent.png);
+        }
+
+        .knob-image:value(0.14) {
+            background-image: url(knob/14percent.png);
+        }
+
+        .knob-image:value(0.15) {
+            background-image: url(knob/15percent.png);
+        }
+
+        .knob-image:value(0.16) {
+            background-image: url(knob/16percent.png);
+        }
+
+        .knob-image:value(0.17) {
+            background-image: url(knob/17percent.png);
+        }
+
+        .knob-image:value(0.18) {
+            background-image: url(knob/18percent.png);
+        }
+
+        .knob-image:value(0.19) {
+            background-image: url(knob/19percent.png);
+        }
+
+        .knob-image:value(0.20) {
+            background-image: url(knob/20percent.png);
+        }
+
+        .knob-image:value(0.21) {
+            background-image: url(knob/21percent.png);
+        }
+
+        .knob-image:value(0.22) {
+            background-image: url(knob/22percent.png);
+        }
+
+        .knob-image:value(0.23) {
+            background-image: url(knob/23percent.png);
+        }
+
+        .knob-image:value(0.24) {
+            background-image: url(knob/24percent.png);
+        }
+
+        .knob-image:value(0.25) {
+            background-image: url(knob/25percent.png);
+        }
+
+        .knob-image:value(0.26) {
+            background-image: url(knob/26percent.png);
+        }
+
+        .knob-image:value(0.27) {
+            background-image: url(knob/27percent.png);
+        }
+
+        .knob-image:value(0.28) {
+            background-image: url(knob/28percent.png);
+        }
+
+        .knob-image:value(0.29) {
+            background-image: url(knob/29percent.png);
+        }
+
+        .knob-image:value(0.30) {
+            background-image: url(knob/30percent.png);
+        }
+
+        .knob-image:value(0.31) {
+            background-image: url(knob/31percent.png);
+        }
+
+        .knob-image:value(0.32) {
+            background-image: url(knob/32percent.png);
+        }
+
+        .knob-image:value(0.33) {
+            background-image: url(knob/33percent.png);
+        }
+
+        .knob-image:value(0.34) {
+            background-image: url(knob/34percent.png);
+        }
+
+        .knob-image:value(0.35) {
+            background-image: url(knob/35percent.png);
+        }
+
+        .knob-image:value(0.36) {
+            background-image: url(knob/36percent.png);
+        }
+
+        .knob-image:value(0.37) {
+            background-image: url(knob/37percent.png);
+        }
+
+        .knob-image:value(0.38) {
+            background-image: url(knob/38percent.png);
+        }
+
+        .knob-image:value(0.39) {
+            background-image: url(knob/39percent.png);
+        }
+
+        .knob-image:value(0.40) {
+            background-image: url(knob/40percent.png);
+        }
+
+        .knob-image:value(0.41) {
+            background-image: url(knob/41percent.png);
+        }
+
+        .knob-image:value(0.42) {
+            background-image: url(knob/42percent.png);
+        }
+
+        .knob-image:value(0.43) {
+            background-image: url(knob/43percent.png);
+        }
+
+        .knob-image:value(0.44) {
+            background-image: url(knob/44percent.png);
+        }
+
+        .knob-image:value(0.45) {
+            background-image: url(knob/45percent.png);
+        }
+
+        .knob-image:value(0.46) {
+            background-image: url(knob/46percent.png);
+        }
+
+        .knob-image:value(0.47) {
+            background-image: url(knob/47percent.png);
+        }
+
+        .knob-image:value(0.48) {
+            background-image: url(knob/48percent.png);
+        }
+
+        .knob-image:value(0.49) {
+            background-image: url(knob/49percent.png);
+        }
+
+        .knob-image:value(0.50) {
+            background-image: url(knob/50percent.png);
+        }
+
+        .knob-image:value(0.51) {
+            background-image: url(knob/51percent.png);
+        }
+
+        .knob-image:value(0.52) {
+            background-image: url(knob/52percent.png);
+        }
+
+        .knob-image:value(0.53) {
+            background-image: url(knob/53percent.png);
+        }
+
+        .knob-image:value(0.54) {
+            background-image: url(knob/54percent.png);
+        }
+
+        .knob-image:value(0.55) {
+            background-image: url(knob/55percent.png);
+        }
+
+        .knob-image:value(0.56) {
+            background-image: url(knob/56percent.png);
+        }
+
+        .knob-image:value(0.57) {
+            background-image: url(knob/57percent.png);
+        }
+
+        .knob-image:value(0.58) {
+            background-image: url(knob/58percent.png);
+        }
+
+        .knob-image:value(0.59) {
+            background-image: url(knob/59percent.png);
+        }
+
+        .knob-image:value(0.60) {
+            background-image: url(knob/60percent.png);
+        }
+
+        .knob-image:value(0.61) {
+            background-image: url(knob/61percent.png);
+        }
+
+        .knob-image:value(0.62) {
+            background-image: url(knob/62percent.png);
+        }
+
+        .knob-image:value(0.63) {
+            background-image: url(knob/63percent.png);
+        }
+
+        .knob-image:value(0.64) {
+            background-image: url(knob/64percent.png);
+        }
+
+        .knob-image:value(0.65) {
+            background-image: url(knob/65percent.png);
+        }
+
+        .knob-image:value(0.66) {
+            background-image: url(knob/66percent.png);
+        }
+
+        .knob-image:value(0.67) {
+            background-image: url(knob/67percent.png);
+        }
+
+        .knob-image:value(0.68) {
+            background-image: url(knob/68percent.png);
+        }
+
+        .knob-image:value(0.69) {
+            background-image: url(knob/69percent.png);
+        }
+
+        .knob-image:value(0.70) {
+            background-image: url(knob/70percent.png);
+        }
+
+        .knob-image:value(0.71) {
+            background-image: url(knob/71percent.png);
+        }
+
+        .knob-image:value(0.72) {
+            background-image: url(knob/72percent.png);
+        }
+
+        .knob-image:value(0.73) {
+            background-image: url(knob/73percent.png);
+        }
+
+        .knob-image:value(0.74) {
+            background-image: url(knob/74percent.png);
+        }
+
+        .knob-image:value(0.75) {
+            background-image: url(knob/75percent.png);
+        }
+
+        .knob-image:value(0.76) {
+            background-image: url(knob/76percent.png);
+        }
+
+        .knob-image:value(0.77) {
+            background-image: url(knob/77percent.png);
+        }
+
+        .knob-image:value(0.78) {
+            background-image: url(knob/78percent.png);
+        }
+
+        .knob-image:value(0.79) {
+            background-image: url(knob/79percent.png);
+        }
+
+        .knob-image:value(0.80) {
+            background-image: url(knob/80percent.png);
+        }
+
+        .knob-image:value(0.81) {
+            background-image: url(knob/81percent.png);
+        }
+
+        .knob-image:value(0.82) {
+            background-image: url(knob/82percent.png);
+        }
+
+        .knob-image:value(0.83) {
+            background-image: url(knob/83percent.png);
+        }
+
+        .knob-image:value(0.84) {
+            background-image: url(knob/84percent.png);
+        }
+
+        .knob-image:value(0.85) {
+            background-image: url(knob/85percent.png);
+        }
+
+        .knob-image:value(0.86) {
+            background-image: url(knob/86percent.png);
+        }
+
+        .knob-image:value(0.87) {
+            background-image: url(knob/87percent.png);
+        }
+
+        .knob-image:value(0.88) {
+            background-image: url(knob/88percent.png);
+        }
+
+        .knob-image:value(0.89) {
+            background-image: url(knob/89percent.png);
+        }
+
+        .knob-image:value(0.90) {
+            background-image: url(knob/90percent.png);
+        }
+
+        .knob-image:value(0.91) {
+            background-image: url(knob/91percent.png);
+        }
+
+        .knob-image:value(0.92) {
+            background-image: url(knob/92percent.png);
+        }
+
+        .knob-image:value(0.93) {
+            background-image: url(knob/93percent.png);
+        }
+
+        .knob-image:value(0.94) {
+            background-image: url(knob/94percent.png);
+        }
+
+        .knob-image:value(0.95) {
+            background-image: url(knob/95percent.png);
+        }
+
+        .knob-image:value(0.96) {
+            background-image: url(knob/96percent.png);
+        }
+
+        .knob-image:value(0.97) {
+            background-image: url(knob/97percent.png);
+        }
+
+        .knob-image:value(0.98) {
+            background-image: url(knob/98percent.png);
+        }
+
+        .knob-image:value(0.99) {
+            background-image: url(knob/99percent.png);
+        }
+
+        .knob-image:value(1) {
+            background-image: url(knob/100percent.png);
+            background-color: black;
+        }
+
+
+        /*
+
+Copyright 2025 QSC, LLC
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this softwareand associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
