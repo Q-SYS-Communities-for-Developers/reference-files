@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "type": "LuaModule",
+  "author": "Hope Roth",
+  "description": "Translates Web Colors, RGB Values and Hex Values",
+  "requiredVersion": "9.5"
+}

@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "type": "LuaModule",
+  "author": "Hope Roth",
+  "description": "Helps to Select Components",
+  "requiredVersion": "9.5"
+}
